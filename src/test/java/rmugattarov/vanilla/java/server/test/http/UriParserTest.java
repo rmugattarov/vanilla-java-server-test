@@ -17,7 +17,6 @@ public class UriParserTest {
      */
     @Test
     public void test_parseUriIntoWorkItem_deposit() {
-        System.out.println("!!!!!!!!");
         URI uri = URI.create("http://localhost:8888/deposit?to=robert&sum=100");
         Optional<WorkItem> workItemOpt = UriParser.parseUriIntoWorkItem(uri);
 
