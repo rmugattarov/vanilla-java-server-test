@@ -1,0 +1,27 @@
+plugins {
+    id 'application'
+}
+
+group 'rmugattarov'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
+    compile 'org.slf4j:slf4j-api:1.7.26'
+    compile 'org.slf4j:slf4j-log4j12:1.7.26'
+    compile 'org.apache.httpcomponents:httpclient:4.5.7'
+    compile 'org.apache.commons:commons-lang3:3.8.1'
+}
+
+application {
+    mainClassName = 'rmugattarov.vanilla.java.server.test.App'
+}
+
