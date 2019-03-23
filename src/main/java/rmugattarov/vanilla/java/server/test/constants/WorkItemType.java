@@ -13,8 +13,8 @@ public enum WorkItemType {
     }
 
     public static WorkItemType fromPath(String path) {
-        for (WorkItemType t: values()) {
-            if(t.getPath().equals(path)) return t;
+        for (WorkItemType t : values()) {
+            if (t.getPath().equals(path)) return t;
         }
         return null;
     }

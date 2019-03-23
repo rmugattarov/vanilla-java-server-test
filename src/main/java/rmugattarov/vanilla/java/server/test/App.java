@@ -10,7 +10,7 @@ public class App {
         try {
             server = new MyHttpServer();
             server.start();
-        } catch (Throwable t){
+        } catch (Throwable t) {
             if (server != null) {
                 server.stop();
             }
