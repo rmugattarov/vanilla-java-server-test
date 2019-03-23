@@ -9,6 +9,9 @@ import rmugattarov.vanilla.java.server.test.model.WorkItem;
 import java.math.BigInteger;
 import java.util.Optional;
 
+/**
+ * Tests {@link TransactionExecutor}
+ */
 public class TransactionExecutorTest {
     /**
      * Tests {@link TransactionExecutor#addWorkItem(WorkItem)}
